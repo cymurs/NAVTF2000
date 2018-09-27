@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Export">
+      <UniqueIdentifier>{6e378e7b-8db5-4bfd-9624-efc423058266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{d558ca0d-9bf2-48f9-adc1-0ca9b51c7257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm">
+      <UniqueIdentifier>{7410ea27-da13-468b-a896-54c69c8d9ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\Define">
+      <UniqueIdentifier>{6dccd0ea-a83b-4fdc-af19-64f19bcba7c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\Function">
+      <UniqueIdentifier>{6c6f929e-af6f-4abd-b9dd-60b4b2ed8a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT">
+      <UniqueIdentifier>{3ea32475-8c6a-4c6a-9abb-f6260264cb36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Generated">
+      <UniqueIdentifier>{b6c3cbf5-1eac-4a06-902a-dd7a9de1ef90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Resources">
+      <UniqueIdentifier>{90d8ea69-e30f-4e91-bc79-fa980eb8ed0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Resources\Images">
+      <UniqueIdentifier>{f6d2fc7a-83c7-488e-be71-69426103ec38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Widgets">
+      <UniqueIdentifier>{43170cc8-4071-4a7b-a2ad-782739b4c082}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LibUI.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Base\qmfcapp.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Base\qwinhost.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Base\qwinwidget.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Function\Function.cpp">
+      <Filter>Comm\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Function\simplecrypt.cpp">
+      <Filter>Comm\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_adjustTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_gnssTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_imageTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_mainWidget.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_myLabel.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_qwinhost.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_qwinwidget.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_statusTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_updateTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\qrc_comassist.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComAssist\QT\Widgets\adjustTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComAssist\QT\Widgets\gnssTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComAssist\QT\Widgets\imageTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComAssist\QT\Widgets\mainWidget.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComAssist\QT\Widgets\myLabel.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComAssist\QT\Widgets\statusTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComAssist\QT\Widgets\updateTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LibUI.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="QT\Base\qmfcapp.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Define\DefineFile.h">
+      <Filter>Comm\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Function\Function.h">
+      <Filter>Comm\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Function\simplecrypt.h">
+      <Filter>Comm\Function</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ComAssist\QT\Resources\comassist.qss">
+      <Filter>QT\Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\ComAssist\comassist.rc">
+      <Filter>QT\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\ComAssist\QT\Resources\images\bg_adjust.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\bg_gnss.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\bg_main.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\bg_signal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\bg_status.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\bg_update.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\button_disable.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\button_hover.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\button_normal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\button_pressed.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_disable.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_hover.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_normal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_pressed.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\down-disable.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\down-normal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\green.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\homehelp.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\lock.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\red.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\sys.ico">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="..\ComAssist\QT\Resources\images\unlock.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="QT\Base\qwinhost.h">
+      <Filter>Base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QT\Base\qwinwidget.h">
+      <Filter>Base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Resources\comassist.qrc">
+      <Filter>QT\Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\adjustTab.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\gnssTab.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\imageTab.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\mainWidget.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\myLabel.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\statusTab.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\updateTab.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

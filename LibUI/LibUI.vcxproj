@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8157AF3B-0C92-47E2-822F-2CDD68C376A2}</ProjectGuid>
+    <RootNamespace>LibUI</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25420.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;LIBUI_EXPORTS;_AFXDLL;WINVER=0x0500;QT_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;Libase.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBUI_EXPORTS;_AFXDLL;WINVER=0x0500;QT_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtGui4.lib;Libase.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ComAssist\QT\Widgets\adjustTab.cpp" />
+    <ClCompile Include="..\ComAssist\QT\Widgets\gnssTab.cpp" />
+    <ClCompile Include="..\ComAssist\QT\Widgets\imageTab.cpp" />
+    <ClCompile Include="..\ComAssist\QT\Widgets\mainWidget.cpp" />
+    <ClCompile Include="..\ComAssist\QT\Widgets\myLabel.cpp" />
+    <ClCompile Include="..\ComAssist\QT\Widgets\statusTab.cpp" />
+    <ClCompile Include="..\ComAssist\QT\Widgets\updateTab.cpp" />
+    <ClCompile Include="..\Common\Function\Function.cpp" />
+    <ClCompile Include="..\Common\Function\simplecrypt.cpp" />
+    <ClCompile Include="LibUI.cpp" />
+    <ClCompile Include="QT\Base\qmfcapp.cpp" />
+    <ClCompile Include="QT\Base\qwinhost.cpp" />
+    <ClCompile Include="QT\Base\qwinwidget.cpp" />
+    <ClCompile Include="QT\Generated\moc_adjustTab.cpp" />
+    <ClCompile Include="QT\Generated\moc_gnssTab.cpp" />
+    <ClCompile Include="QT\Generated\moc_imageTab.cpp" />
+    <ClCompile Include="QT\Generated\moc_mainWidget.cpp" />
+    <ClCompile Include="QT\Generated\moc_myLabel.cpp" />
+    <ClCompile Include="QT\Generated\moc_qwinhost.cpp" />
+    <ClCompile Include="QT\Generated\moc_qwinwidget.cpp" />
+    <ClCompile Include="QT\Generated\moc_statusTab.cpp" />
+    <ClCompile Include="QT\Generated\moc_updateTab.cpp" />
+    <ClCompile Include="QT\Generated\qrc_comassist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\adjustTab.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc adjustTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc ../ComAssist/QT/Widgets/adjustTab.h -o QT/Generated/moc_adjustTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; ../ComAssist/QT/Widgets/adjustTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_adjustTab.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc adjustTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc ../ComAssist/QT/Widgets/adjustTab.h -o QT/Generated/moc_adjustTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; ../ComAssist/QT/Widgets/adjustTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_adjustTab.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\gnssTab.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc gnssTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc ../ComAssist/QT/Widgets/gnssTab.h -o QT/Generated/moc_gnssTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; ../ComAssist/QT/Widgets/gnssTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_gnssTab.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc gnssTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc ../ComAssist/QT/Widgets/gnssTab.h -o QT/Generated/moc_gnssTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; ../ComAssist/QT/Widgets/gnssTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_gnssTab.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\imageTab.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc imageTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc ../ComAssist/QT/Widgets/imageTab.h -o QT/Generated/moc_imageTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; ../ComAssist/QT/Widgets/imageTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_imageTab.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc imageTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc ../ComAssist/QT/Widgets/imageTab.h -o QT/Generated/moc_imageTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; ../ComAssist/QT/Widgets/imageTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_imageTab.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\mainWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc mainWidget.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc ../ComAssist/QT/Widgets/mainWidget.h -o QT/Generated/moc_mainWidget.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; ../ComAssist/QT/Widgets/mainWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_mainWidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc mainWidget.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc ../ComAssist/QT/Widgets/mainWidget.h -o QT/Generated/moc_mainWidget.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; ../ComAssist/QT/Widgets/mainWidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_mainWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\myLabel.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc myLabel.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc ../ComAssist/QT/Widgets/myLabel.h -o QT/Generated/moc_myLabel.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; ../ComAssist/QT/Widgets/myLabel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_myLabel.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc myLabel.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc ../ComAssist/QT/Widgets/myLabel.h -o QT/Generated/moc_myLabel.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; ../ComAssist/QT/Widgets/myLabel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_myLabel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\statusTab.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc statusTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc ../ComAssist/QT/Widgets/statusTab.h -o QT/Generated/moc_statusTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; ../ComAssist/QT/Widgets/statusTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_statusTab.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc statusTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc ../ComAssist/QT/Widgets/statusTab.h -o QT/Generated/moc_statusTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; ../ComAssist/QT/Widgets/statusTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_statusTab.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ComAssist\QT\Widgets\updateTab.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc updateTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc ../ComAssist/QT/Widgets/updateTab.h -o QT/Generated/moc_updateTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; ../ComAssist/QT/Widgets/updateTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_updateTab.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc updateTab.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc ../ComAssist/QT/Widgets/updateTab.h -o QT/Generated/moc_updateTab.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; ../ComAssist/QT/Widgets/updateTab.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_updateTab.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\Common\Define\DefineFile.h" />
+    <ClInclude Include="..\Common\Function\Function.h" />
+    <ClInclude Include="..\Common\Function\simplecrypt.h" />
+    <ClInclude Include="LibUI.h" />
+    <ClInclude Include="QT\Base\qmfcapp.h" />
+    <CustomBuild Include="QT\Base\qwinhost.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc qwinhost.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc QT/Base/qwinhost.h -o QT/Generated/moc_qwinhost.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; QT/Base/qwinhost.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_qwinhost.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc qwinhost.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc QT/Base/qwinhost.h -o QT/Generated/moc_qwinhost.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; QT/Base/qwinhost.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_qwinhost.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="QT\Base\qwinwidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc qwinwidget.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc QT/Base/qwinwidget.h -o QT/Generated/moc_qwinwidget.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">moc; QT/Base/qwinwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/moc_qwinwidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc qwinwidget.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc QT/Base/qwinwidget.h -o QT/Generated/moc_qwinwidget.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">moc; QT/Base/qwinwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/moc_qwinwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\ComAssist\QT\Resources\comassist.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rcc comassist.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rcc ../ComAssist/QT/Resources/comassist.qrc -o QT/Generated/qrc_comassist.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rcc;../ComAssist/QT/Resources/comassist.qrc;../ComAssist/QT/Resources/comassist.qss;../ComAssist/QT/Resources/images/homehelp.png;../ComAssist/QT/Resources/images/red.png;../ComAssist/QT/Resources/images/green.png;../ComAssist/QT/Resources/images/bg_main.png;../ComAssist/QT/Resources/images/bg_update.png;../ComAssist/QT/Resources/images/bg_signal.png;../ComAssist/QT/Resources/images/bg_status.png;../ComAssist/QT/Resources/images/bg_adjust.png;../ComAssist/QT/Resources/images/bg_gnss.png;../ComAssist/QT/Resources/images/button_disable.png;../ComAssist/QT/Resources/images/button_hover.png;../ComAssist/QT/Resources/images/button_normal.png;../ComAssist/QT/Resources/images/button_pressed.png;../ComAssist/QT/Resources/images/combobox_disable.png;../ComAssist/QT/Resources/images/combobox_hover.png;../ComAssist/QT/Resources/images/combobox_normal.png;../ComAssist/QT/Resources/images/combobox_pressed.png;../ComAssist/QT/Resources/images/down-normal.png;../ComAssist/QT/Resources/images/down-disable.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QT/Generated/qrc_comassist.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rcc comassist.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rcc ../ComAssist/QT/Resources/comassist.qrc -o QT/Generated/qrc_comassist.cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rcc;../ComAssist/QT/Resources/comassist.qrc;../ComAssist/QT/Resources/comassist.qss;../ComAssist/QT/Resources/images/homehelp.png;../ComAssist/QT/Resources/images/red.png;../ComAssist/QT/Resources/images/green.png;../ComAssist/QT/Resources/images/bg_main.png;../ComAssist/QT/Resources/images/bg_update.png;../ComAssist/QT/Resources/images/bg_signal.png;../ComAssist/QT/Resources/images/bg_status.png;../ComAssist/QT/Resources/images/bg_adjust.png;../ComAssist/QT/Resources/images/bg_gnss.png;../ComAssist/QT/Resources/images/button_disable.png;../ComAssist/QT/Resources/images/button_hover.png;../ComAssist/QT/Resources/images/button_normal.png;../ComAssist/QT/Resources/images/button_pressed.png;../ComAssist/QT/Resources/images/combobox_disable.png;../ComAssist/QT/Resources/images/combobox_hover.png;../ComAssist/QT/Resources/images/combobox_normal.png;../ComAssist/QT/Resources/images/combobox_pressed.png;../ComAssist/QT/Resources/images/down-normal.png;../ComAssist/QT/Resources/images/down-disable.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QT/Generated/qrc_comassist.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\ComAssist\QT\Resources\comassist.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\ComAssist\comassist.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\ComAssist\QT\Resources\images\bg_adjust.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\bg_gnss.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\bg_main.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\bg_signal.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\bg_status.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\bg_update.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\button_disable.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\button_hover.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\button_normal.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\button_pressed.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_disable.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_hover.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_normal.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\combobox_pressed.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\down-disable.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\down-normal.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\green.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\homehelp.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\lock.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\red.png" />
+    <Image Include="..\ComAssist\QT\Resources\images\sys.ico" />
+    <Image Include="..\ComAssist\QT\Resources\images\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libase\Libase.vcxproj">
+      <Project>{0ffebcac-f7fe-492c-b467-ead18c4fd6ba}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
