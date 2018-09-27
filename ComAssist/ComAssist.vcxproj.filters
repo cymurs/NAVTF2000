@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="QT">
+      <UniqueIdentifier>{fe9d4fb6-5706-418f-bda3-3ac9bba10520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Generated">
+      <UniqueIdentifier>{f2464f60-9f3f-45c2-b4a0-a66211eea545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Resources">
+      <UniqueIdentifier>{d6eccaf5-af91-4c0e-86c3-5f7c379575b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Resources\Images">
+      <UniqueIdentifier>{76f262a3-cbb4-46d2-a462-3fd97340efac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Widgets">
+      <UniqueIdentifier>{ce7086a7-25bc-44b0-83ee-bbb126785937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm">
+      <UniqueIdentifier>{9752d23c-6554-4769-8f83-8295add6d10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\Function">
+      <UniqueIdentifier>{97391d57-21bf-42ee-8b45-42646c7600b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\Define">
+      <UniqueIdentifier>{73c34b1f-d6f9-470b-adab-248582675fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Headers">
+      <UniqueIdentifier>{f90b88e1-6dda-472f-aaee-673f9d1a60ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QT\Widgets\adjustTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Widgets\gnssTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Widgets\imageTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Widgets\mainWidget.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Widgets\myLabel.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Widgets\statusTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Widgets\updateTab.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Function\Function.cpp">
+      <Filter>Comm\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Function\simplecrypt.cpp">
+      <Filter>Comm\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="ComAssistMain.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="QT\Generated\moc_adjustTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_gnssTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_imageTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_mainWidget.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_myLabel.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_statusTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_updateTab.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\qrc_comassist.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QT\Resources\comassist.qss">
+      <Filter>QT\Resources</Filter>
+    </None>
+    <None Include="QT\Resources\comassist.qrc">
+      <Filter>QT\Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="comassist.rc">
+      <Filter>QT\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="QT\Resources\images\bg_adjust.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\bg_gnss.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\bg_main.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\bg_signal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\bg_status.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\bg_update.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\button_disable.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\button_hover.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\button_normal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\button_pressed.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\combobox_disable.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\combobox_hover.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\combobox_normal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\combobox_pressed.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\down-disable.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\down-normal.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\green.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\homehelp.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\lock.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\red.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\sys.ico">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+    <Image Include="QT\Resources\images\unlock.png">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Function\Function.h">
+      <Filter>Comm\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Function\simplecrypt.h">
+      <Filter>Comm\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Define\DefineFile.h">
+      <Filter>Comm\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="QT\Widgets\adjustTab.h">
+      <Filter>QT\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QT\Widgets\gnssTab.h">
+      <Filter>QT\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QT\Widgets\imageTab.h">
+      <Filter>QT\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QT\Widgets\mainWidget.h">
+      <Filter>QT\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QT\Widgets\myLabel.h">
+      <Filter>QT\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QT\Widgets\statusTab.h">
+      <Filter>QT\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QT\Widgets\updateTab.h">
+      <Filter>QT\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

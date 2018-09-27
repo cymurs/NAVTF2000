@@ -1,0 +1,30 @@
+﻿  stdafx.cpp
+  qrc_comassist.cpp
+  moc_updateTab.cpp
+  moc_statusTab.cpp
+  moc_myLabel.cpp
+  moc_mainWidget.cpp
+  moc_imageTab.cpp
+  moc_gnssTab.cpp
+  moc_adjustTab.cpp
+  ComAssistMain.cpp
+  simplecrypt.cpp
+  Function.cpp
+  正在生成代码...
+  updateTab.cpp
+e:\hym\navtf2000\comassist\qt\widgets\updatetab.cpp(2754): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\hym\navtf2000\comassist\qt\widgets\updatetab.cpp(2775): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\hym\navtf2000\comassist\qt\widgets\updatetab.cpp(3209): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\hym\navtf2000\comassist\qt\widgets\updatetab.cpp(3641): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  statusTab.cpp
+  myLabel.cpp
+  mainWidget.cpp
+  imageTab.cpp
+  gnssTab.cpp
+  adjustTab.cpp
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(E:\hym\NAVTF2000\Debug\ComAssist.exe) does not match the Linker's OutputFile property value (E:\hym\NAVTF2000\Debug\Navtf.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(ComAssist) does not match the Linker's OutputFile property value (Navtf). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+Function.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+  ComAssist.vcxproj -> E:\hym\NAVTF2000\Debug\ComAssist.exe
+  ComAssist.vcxproj -> E:\hym\NAVTF2000\Debug\ComAssist.pdb (Full PDB)

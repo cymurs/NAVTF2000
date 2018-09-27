@@ -1,0 +1,28 @@
+﻿  stdafx.cpp
+  Function.cpp
+  simplecrypt.cpp
+  moc_adjustTab.cpp
+  moc_gnssTab.cpp
+  moc_imageTab.cpp
+  moc_mainWidget.cpp
+  moc_myLabel.cpp
+  moc_statusTab.cpp
+  moc_updateTab.cpp
+  qrc_comassist.cpp
+  ComAssistMain.cpp
+  adjustTab.cpp
+  gnssTab.cpp
+  imageTab.cpp
+  mainWidget.cpp
+  myLabel.cpp
+  statusTab.cpp
+  updateTab.cpp
+QT\Widgets\updateTab.cpp(2754): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+QT\Widgets\updateTab.cpp(2775): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+QT\Widgets\updateTab.cpp(3209): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+QT\Widgets\updateTab.cpp(3641): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码
+  All 1514 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  ComAssist.vcxproj -> E:\hym\NAVTF2000\Release\ComAssist.exe
+  ComAssist.vcxproj -> E:\hym\NAVTF2000\Release\ComAssist.pdb (Full PDB)

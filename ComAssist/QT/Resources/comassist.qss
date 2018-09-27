@@ -1,0 +1,232 @@
+/*  ============================= S1: 主窗口 bg_main============================= */
+CMainWidget
+{
+	/*background-image: url(:/images/bg_main.png);*/
+}
+
+/*  ============================= S2: 通信/升级 页 bg_update============================= */
+CUpdateTab
+{
+	background-image: url(:/images/bg_update.png);
+}
+
+/*  ============================= S3: 信号选择 页 bg_signal============================= */
+CMyImageTab
+{
+	background-image: url(:/images/bg_signal.png);
+}
+
+/*  ============================= S4: 状态/监控 页 bg_status============================= */
+ CStatusTab
+{
+	background-image: url(:/images/bg_status.png);
+}
+
+/*  ============================= S5: 设备调整 页 bg_adjust============================= */
+CMyAdjustTab
+{
+	background-image: url(:/images/bg_adjust.png);
+}
+
+/*  ============================= S6: GNSS 页 bg_gnss============================= */
+CGNSSTab
+{
+	background-image: url(:/images/bg_gnss.png);
+}
+
+/*  ============================= S7: QListView, QLineEdit, QTextEdit ============================= */
+QListView, QLineEdit, QTextEdit
+{
+    background-color: rgb(239, 239, 226);
+    border: 2px groove gray;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+/*  ========================================== S8: QGroupBox ===================================== */
+QGroupBox 
+{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 1ex;
+}
+QGroupBox::title 
+{
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    color: blue;
+}
+
+/*  ========================================== S9: QTabWidget ===================================== */
+QTabWidget::pane 
+{
+    border-top: 2px solid #C2C7CB;
+}
+QTabBar::tab 
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #E1E1E1, stop: 0.4 #DDDDDD, stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 1px solid #C4C4C3;
+    border-bottom-color: #C2C7CB;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 80px;
+    padding: 2px;
+}
+QTabBar::tab:selected, QTabBar::tab:hover 
+{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #fafafa, stop: 0.4 #f4f4f4, stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+QTabBar::tab:selected 
+{
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB;
+    font: bold;
+    font-size: 15px;
+    color: rgb(14, 94, 89);
+}
+QTabBar::tab:!selected 
+{
+    margin-top: 5px;
+}
+
+/* ============================= S10: QPushButton ============================= */
+QPushButton
+{
+	border-image: url(:/images/button_normal.png) 5px;
+	border-width: 5px;
+	color: rgb(240, 240, 240);
+	font: bold;
+	font-size: 12pt;
+	min-width: 50px;
+}
+QPushButton:hover
+{
+	border-image: url(:/images/button_hover.png) 5px;
+}
+QPushButton:pressed
+{
+	border-image: url(:/images/button_pressed.png) 5px;
+	padding-top: 2px;
+}
+QPushButton:disabled
+{
+	border-image: url(:/images/button_disable.png) 5px;
+	color: rgb(200, 200, 200);;
+}
+
+/* ============================= S11: QComboBox ============================= */
+QComboBox
+{
+    border-image: url(:/images/combobox_normal.png) 5px;
+    border-width: 5px;
+    color: white;
+    min-height: 20px;
+}
+QComboBox:hover
+{
+    border-image: url(:/images/combobox_hover.png) 5px;
+}
+QComboBox:disabled
+{
+    border-image: url(:/images/combobox_disable.png) 5px;
+}
+QComboBox:on
+{
+    color: lightgray;
+    border-image: url(:/images/combobox_pressed.png) 5px;
+    padding-top: -15px;
+    padding-bottom: -17px;
+}
+QComboBox::drop-down:!editable
+{
+	image: url(:/images/down-normal.png);
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 18px;
+    height: 15px;
+    background: none;
+}
+QComboBox::down-arrow:disabled
+{
+	image: url(:/images/down-disable.png);
+}
+QComboBox
+{
+    padding-right: 5px;
+}
+
+/* ============================= S12: QComboBox:editable ============================= */
+QComboBox::drop-down:editable {
+    border-image: url(:/images/combobox_normal.png) 5;
+    border-width: 5px;
+    subcontrol-origin: margin;
+    subcontrol-position: center right;
+    width: 25px;
+    height: 25px;
+}
+
+QComboBox::down-arrow 
+{
+    image: url(:/images/down-normal.png);
+    width: 18px;
+    height: 15px;
+}
+QComboBox::down-arrow:on 
+{
+    top: 1px;
+}
+
+QComboBox::drop-down:editable:hover {
+    border-image: url(:/images/combobox_hover.png) 5;
+}
+
+QComboBox::drop-down:editable:open {
+    border-image: url(:/images/combobox_pressed.png) 5;
+}
+
+QComboBox:editable {
+    margin-right: 35px;
+}
+
+/* ============================= S13: QMessageBox ============================= */
+QMessageBox
+{
+	background-image: url(:/images/bg_signal.png);
+}
+
+/* ============================= S14: QLabel ============================= */
+QLabel
+{
+	font-size: 16px;
+}
+
+/* ============================= S15: QCheckBox, QRadioBox, QRadioButton ============================= */
+QCheckBox, QRadioBox, QRadioButton
+{
+	font-size: 15px;
+}
+
+/* ============================= S16: QTableWidget, QHeaderView ============================= */
+QTableWidget
+{
+    background-color: rgb(239, 239, 226);
+    border: 2px groove gray;
+    border-radius: 6px;
+    padding: 2px;
+}
+QHeaderView
+{
+	background-color: rgb(211, 206, 192);
+}
+QHeaderView::section
+{
+	background-color: rgb(211, 206, 192);
+}
+
+/* ============================= S17: QScrollBar ============================= */
+QScrollBar
+{
+	background: rgb(211, 206, 192);
+}
+

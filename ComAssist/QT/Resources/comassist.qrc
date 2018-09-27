@@ -1,0 +1,26 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>comassist.qss</file>
+    <file>images/homehelp.png</file>
+    <file>images/red.png</file>
+    <file>images/green.png</file>
+    <file>images/bg_main.png</file>
+    <file>images/bg_update.png</file>
+    <file>images/bg_signal.png</file>
+    <file>images/bg_status.png</file>
+    <file>images/bg_adjust.png</file>
+    <file>images/bg_gnss.png</file>
+    <file>images/button_disable.png</file>
+    <file>images/button_hover.png</file>
+    <file>images/button_normal.png</file>
+    <file>images/button_pressed.png</file>
+    <file>images/combobox_disable.png</file>
+    <file>images/combobox_hover.png</file>
+    <file>images/combobox_normal.png</file>
+    <file>images/combobox_pressed.png</file>
+    <file>images/down-normal.png</file>
+    <file>images/down-disable.png</file>
+    <file>images/lock.png</file>
+    <file>images/unlock.png</file>
+</qresource>
+</RCC>
