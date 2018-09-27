@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Libase", "Libase\Libase.vcxproj", "{0FFEBCAC-F7FE-492C-B467-EAD18C4FD6BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComAssist", "ComAssist\ComAssist.vcxproj", "{38E65EC1-94FA-4275-B19F-0851560E5532}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CNAU", "CNAU\CNAU.vcxproj", "{C02B821C-6055-46F1-87F4-A522138E39ED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibUI", "LibUI\LibUI.vcxproj", "{8157AF3B-0C92-47E2-822F-2CDD68C376A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FFEBCAC-F7FE-492C-B467-EAD18C4FD6BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FFEBCAC-F7FE-492C-B467-EAD18C4FD6BA}.Debug|Win32.Build.0 = Debug|Win32
+		{0FFEBCAC-F7FE-492C-B467-EAD18C4FD6BA}.Release|Win32.ActiveCfg = Release|Win32
+		{0FFEBCAC-F7FE-492C-B467-EAD18C4FD6BA}.Release|Win32.Build.0 = Release|Win32
+		{38E65EC1-94FA-4275-B19F-0851560E5532}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38E65EC1-94FA-4275-B19F-0851560E5532}.Debug|Win32.Build.0 = Debug|Win32
+		{38E65EC1-94FA-4275-B19F-0851560E5532}.Release|Win32.ActiveCfg = Release|Win32
+		{38E65EC1-94FA-4275-B19F-0851560E5532}.Release|Win32.Build.0 = Release|Win32
+		{C02B821C-6055-46F1-87F4-A522138E39ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C02B821C-6055-46F1-87F4-A522138E39ED}.Debug|Win32.Build.0 = Debug|Win32
+		{C02B821C-6055-46F1-87F4-A522138E39ED}.Release|Win32.ActiveCfg = Release|Win32
+		{C02B821C-6055-46F1-87F4-A522138E39ED}.Release|Win32.Build.0 = Release|Win32
+		{8157AF3B-0C92-47E2-822F-2CDD68C376A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8157AF3B-0C92-47E2-822F-2CDD68C376A2}.Debug|Win32.Build.0 = Debug|Win32
+		{8157AF3B-0C92-47E2-822F-2CDD68C376A2}.Release|Win32.ActiveCfg = Release|Win32
+		{8157AF3B-0C92-47E2-822F-2CDD68C376A2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = Qt 5.8.0 MSVC2015_32bit
+	EndGlobalSection
+EndGlobal
