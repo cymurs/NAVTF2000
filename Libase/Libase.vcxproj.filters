@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Export">
+      <UniqueIdentifier>{fe97d368-8ca0-4f3b-b821-1007fdfad03f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{0b3a57f3-7874-4e76-9fd2-20e54dffce2a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Libase.cpp">
+      <Filter>Export</Filter>
+    </ClCompile>
+    <ClCompile Include="Communicate.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Libase.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Communicate.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
