@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Comm">
+      <UniqueIdentifier>{5d8a51e0-7760-4e86-b10a-1f3271aa9d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\Define">
+      <UniqueIdentifier>{39a660d8-2ce0-4bf4-8af2-5de1eb082d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm\Function">
+      <UniqueIdentifier>{a2bd2f9c-e3e8-461f-a9b7-29ebe6e0fe19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT">
+      <UniqueIdentifier>{b9dcc51b-d376-4a7c-a2c9-fb449c171593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Generated">
+      <UniqueIdentifier>{543c4c75-8085-4232-88d7-9f1b91afeac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Resources">
+      <UniqueIdentifier>{e213a9f3-f954-49cf-9ed0-58a2b1dbe0e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Resources\Images">
+      <UniqueIdentifier>{65d4670a-48b7-4765-a81f-d89598bb2cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\Widgets">
+      <UniqueIdentifier>{9c88e4d1-daa7-447f-b710-6c052ad01436}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Define\DefineFile.h">
+      <Filter>Comm\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Function\Function.h">
+      <Filter>Comm\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Function\simplecrypt.h">
+      <Filter>Comm\Function</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Function\Function.cpp">
+      <Filter>Comm\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Function\simplecrypt.cpp">
+      <Filter>Comm\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Generated\moc_mainWidget.cpp">
+      <Filter>QT\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QT\Widgets\mainWidget.cpp">
+      <Filter>QT\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="CNAUMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QT\Resources\cnau.qrc">
+      <Filter>QT\Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cnau.rc">
+      <Filter>QT\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="QT\Resources\Images\sys.ico">
+      <Filter>QT\Resources\Images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="QT\Widgets\mainWidget.h">
+      <Filter>QT\Widgets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
