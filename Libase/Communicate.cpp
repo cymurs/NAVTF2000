@@ -49,9 +49,9 @@ CMyComm::CMyComm()
     m_pDownloadTimeoutFunc = NULL;
 
     // COM Buf
-    m_pSaveBuf = new unsigned char[MAX_SIZE_OF_SAVE_BUF];
-    m_pRecvBuf = new unsigned char[MAX_SIZE_OF_RECV_BUF];
-    m_pSendBuf = new unsigned char[MAX_SIZE_OF_SEND_BUF];
+    m_pSaveBuf = new unsigned char[MAX_SIZE_OF_SAVE_BUF]();
+    m_pRecvBuf = new unsigned char[MAX_SIZE_OF_RECV_BUF]();
+    m_pSendBuf = new unsigned char[MAX_SIZE_OF_SEND_BUF]();
     m_iSaveLength = 0;
     m_iSendDataLength = 0;
 
@@ -211,6 +211,8 @@ bool CMyComm::OpenComPort()
 
     SetupComm(m_hCom, MAX_SIZE_OF_RECV_BUF, MAX_SIZE_OF_SEND_BUF);  // 输入缓冲区和输出缓冲区的大小
 
+	//SetCommMask(m_hCom, EV_RXCHAR | EV_CTS);
+
     COMMTIMEOUTS TimeOuts;
     TimeOuts.ReadIntervalTimeout=MAXDWORD;      // 设定读超时
     TimeOuts.ReadTotalTimeoutMultiplier=0;
@@ -224,9 +226,9 @@ bool CMyComm::OpenComPort()
     GetCommState(m_hCom,&dcb);
     dcb.DCBlength = sizeof(dcb);
     dcb.BaudRate = m_iComBaud;          // 波特率 
-    dcb.ByteSize = m_iComDataBits;      // 数据位
-    dcb.Parity = m_iComParity;          // 校验位 
-    dcb.StopBits = m_iComStopBits;      // 停止位
+	dcb.ByteSize = m_iComDataBits;      // 数据位
+	dcb.Parity = m_iComParity;          // 校验位 
+	dcb.StopBits = m_iComStopBits;      // 停止位
     dcb.fBinary = TRUE;
     dcb.fParity = FALSE;
 
@@ -300,8 +302,7 @@ bool CMyComm::OpenComPort()
 
     SetCommState(m_hCom,&dcb);
 
-    PurgeComm(m_hCom,PURGE_TXCLEAR|PURGE_RXCLEAR);
-
+    PurgeComm(m_hCom,PURGE_TXCLEAR|PURGE_RXCLEAR|PURGE_TXABORT |PURGE_RXABORT);
 
     // 创建线程
     DWORD dwThreadID;
@@ -367,9 +368,19 @@ void CMyComm::ReadComNetData()
 {
     // Read
     int iReaded = 0;
+	memset(m_pRecvBuf, '\0', MAX_SIZE_OF_RECV_BUF);
     if(true == m_bCurrentIsCom)                 // 串口
     {
         if(INVALID_HANDLE_VALUE == m_hCom) return;
+
+		DWORD dwErr;
+		COMSTAT rcs;
+		if (!ClearCommError(m_hCom, &dwErr, &rcs)) {
+			if (CE_FRAME == dwErr || 0 == rcs.cbInQue)
+				return;
+		}		
+		if (0 == rcs.cbInQue)
+			return;
 
         DWORD wCount = MAX_SIZE_OF_RECV_BUF/2;    // 读取的字节数
         BOOL bReadStat;
